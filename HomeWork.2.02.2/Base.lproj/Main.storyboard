@@ -25,6 +25,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsK-fo-tJx"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="a0Q-HY-xF5">
                                 <rect key="frame" x="146.66666666666666" y="79" width="100" height="380"/>
@@ -32,6 +35,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-sE-G15">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oCI-sE-G15" secondAttribute="height" multiplier="1:1" id="RCB-Qt-h1r"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVT-gz-poq">
                                         <rect key="frame" x="0.0" y="140" width="100" height="100"/>
@@ -60,6 +66,12 @@
                             <constraint firstItem="Klt-dL-4aH" firstAttribute="centerX" secondItem="a0Q-HY-xF5" secondAttribute="centerX" id="bEs-Ie-l6u"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="0kO-h0-7dK" id="69w-B6-Uvx"/>
+                        <outlet property="redLight" destination="oCI-sE-G15" id="6kd-uT-HFw"/>
+                        <outlet property="startButton" destination="Klt-dL-4aH" id="Nzp-gk-t9a"/>
+                        <outlet property="yellowLight" destination="VVT-gz-poq" id="ahK-97-9cX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
