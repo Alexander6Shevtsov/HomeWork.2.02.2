@@ -17,18 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klt-dL-4aH">
-                                <rect key="frame" x="124" y="634" width="145" height="53"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsK-fo-tJx"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="a0Q-HY-xF5">
                                 <rect key="frame" x="146.66666666666666" y="79" width="100" height="380"/>
                                 <subviews>
@@ -49,21 +37,34 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="84R-sb-8Ey"/>
-                                    <constraint firstAttribute="width" constant="100" id="ByW-SF-UqP"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="bqr-ml-H5q"/>
-                                    <constraint firstAttribute="height" constant="380" id="ujO-xs-zrj"/>
+                                    <constraint firstAttribute="height" constant="380" id="KhE-sn-LJn"/>
+                                    <constraint firstAttribute="width" constant="100" id="dgO-OF-aws"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klt-dL-4aH">
+                                <rect key="frame" x="126" y="715" width="141" height="53"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="DfI-mX-Yod"/>
+                                    <constraint firstAttribute="height" constant="53" id="PfV-8B-ntf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsK-fo-tJx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Klt-dL-4aH" secondAttribute="bottom" constant="131" id="2bu-UL-ydo"/>
-                            <constraint firstItem="a0Q-HY-xF5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5rK-ng-72M"/>
-                            <constraint firstItem="a0Q-HY-xF5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jxl-eJ-tuc"/>
-                            <constraint firstItem="Klt-dL-4aH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="PfC-MD-fre"/>
-                            <constraint firstItem="Klt-dL-4aH" firstAttribute="centerX" secondItem="a0Q-HY-xF5" secondAttribute="centerX" id="bEs-Ie-l6u"/>
+                            <constraint firstItem="Klt-dL-4aH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aps-r1-CMS"/>
+                            <constraint firstItem="a0Q-HY-xF5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PbL-kl-6Y6"/>
+                            <constraint firstItem="a0Q-HY-xF5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eN6-Mw-llP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Klt-dL-4aH" secondAttribute="bottom" constant="50" id="yjM-75-Kyk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -75,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-23.239436619718312"/>
+            <point key="canvasLocation" x="44.927536231884062" y="-23.64130434782609"/>
         </scene>
     </scenes>
     <resources>
