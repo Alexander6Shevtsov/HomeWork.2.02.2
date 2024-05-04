@@ -42,11 +42,13 @@ final class ViewController: UIViewController {
     // метод вызывается до расстановки элементов на экране и знает их размеры
 // юзаем только когда нужно знать размеры и подстраивать под разные экраны
     override func viewWillLayoutSubviews() {
+        // скругление углов получаем делением стороны вьюшки на 2
         redLight.layer.cornerRadius = redLight.frame.width / 2
         yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
         greenLight.layer.cornerRadius = greenLight.frame.width / 2
     }
     
+    // проверка текущей кнопки, если START меняем на NEXT
     @IBAction private func startButtonPressed() {
         if startButton.currentTitle == "START" {
             startButton.setTitle("NEXT", for: .normal)
